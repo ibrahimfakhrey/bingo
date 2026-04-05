@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up | Pingoo College</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-dim": "#893600",
+                        "surface-container": "#eee7e0",
+                        "on-tertiary-container": "#563500",
+                        "on-error": "#ffefec",
+                        "on-surface": "#312e2b",
+                        "tertiary-fixed": "#feb246",
+                        "on-error-container": "#520c00",
+                        "on-primary-container": "#401500",
+                        "surface": "#fcf5ef",
+                        "tertiary-dim": "#704700",
+                        "error-container": "#f95630",
+                        "primary": "#9c3f00",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e3dcd4",
+                        "on-primary": "#fff0ea",
+                        "surface-variant": "#e3dcd4",
+                        "background": "#fcf5ef",
+                        "secondary-fixed-dim": "#93c8ff",
+                        "inverse-primary": "#fe6b00",
+                        "inverse-on-surface": "#a19c97",
+                        "primary-container": "#ff7a2f",
+                        "secondary-fixed": "#afd5ff",
+                        "secondary-dim": "#005386",
+                        "tertiary-container": "#feb246",
+                        "primary-fixed-dim": "#f66700",
+                        "on-secondary": "#ecf3ff",
+                        "surface-bright": "#fcf5ef",
+                        "on-secondary-container": "#004b79",
+                        "on-primary-fixed-variant": "#4f1c00",
+                        "outline-variant": "#b2aca7",
+                        "inverse-surface": "#100e0b",
+                        "surface-tint": "#9c3f00",
+                        "error": "#b02500",
+                        "on-surface-variant": "#5f5b56",
+                        "surface-container-high": "#e8e1da",
+                        "on-primary-fixed": "#000000",
+                        "error-dim": "#b92902",
+                        "surface-dim": "#dbd3cc",
+                        "on-tertiary": "#fff0e3",
+                        "secondary": "#005f99",
+                        "primary-fixed": "#ff7a2f",
+                        "surface-container-low": "#f7f0e9",
+                        "on-secondary-fixed-variant": "#005488",
+                        "on-secondary-fixed": "#00375b",
+                        "secondary-container": "#afd5ff",
+                        "outline": "#7a7671",
+                        "tertiary-fixed-dim": "#eea439",
+                        "on-tertiary-fixed-variant": "#623d00",
+                        "tertiary": "#805100",
+                        "on-tertiary-fixed": "#3a2300",
+                        "on-background": "#312e2b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #ffffff;
+            color: #312e2b;
+        }
+        .fredoka {
+            font-family: 'Fredoka One', cursive;
+        }
+        .star-decoration {
+            mask-image: url('https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/star/default/24px.svg');
+            background-color: #ff7a2f;
+            opacity: 0.15;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen relative overflow-x-hidden flex flex-col">
+<!-- Decorative Corner Stars -->
+<div class="fixed top-8 left-8 w-12 h-12 star-decoration rotate-12"></div>
+<div class="fixed top-24 left-32 w-6 h-6 star-decoration -rotate-12 opacity-5"></div>
+<div class="fixed bottom-24 right-32 w-10 h-10 star-decoration rotate-45 opacity-10"></div>
+<div class="fixed bottom-8 right-8 w-16 h-16 star-decoration -rotate-12"></div>
+<!-- Header Navigation (Simplified for Transactional Flow) -->
+<header class="w-full flex flex-col items-center pt-10 pb-6 px-6 z-10">
+<div class="flex flex-col items-center gap-2 hover:scale-105 transition-transform duration-200">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center shadow-[0px_8px_24px_rgba(156,63,0,0.15)]">
+<img alt="Cute penguin mascot icon with educational elements, bright orange and white colors, 3D style" class="w-10 h-10" data-alt="close-up 3D render of a friendly penguin character wearing small glasses and holding a book, soft studio lighting, playful orange background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1dkqDEeqaWGV_KGq9FzU7hVVP3w8x-ihF8Nc09ieMWg5fYz6TITPpxEWDRc9ldGFhPVZzYlq60DML75NGZ45LuXQqwMJEOFA32eaHnGEJ3aQv-XmVftl8ZG6X_rFQnT1Dw9oFIBaBOmByniRzhRdBv50r62Hwe05ne_lw9h_GKJW09QiZvmzkbnLR5Ws3UROKeWd7FlFoW8m4GEjufYiBP0QY_h3gzn2CA9ZKXJbPKJLcA-MvwiABG03kKud2h9bgIJEyfqKJMS4"/>
+</div>
+<span class="font-['Fredoka_One'] text-2xl text-[#9c3f00]">Pingoo College</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 flex flex-col items-center justify-start px-6 pb-20 w-full max-w-lg mx-auto z-10">
+<!-- Heading -->
+<div class="text-center mb-8">
+<h1 class="fredoka text-3xl md:text-4xl text-[#312e2b] mb-2">Create Your Account 🎉</h1>
+<p class="text-on-surface-variant font-medium">Join our community of happy parents today.</p>
+</div>
+<!-- Sign Up Form -->
+<form class="w-full space-y-5">
+<!-- Full Name -->
+<div class="space-y-1.5">
+<label class="text-sm font-bold text-on-surface ml-1 uppercase tracking-wider">Full Name</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant">person</span>
+<input class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary-container transition-all outline-none text-on-surface placeholder:text-outline" placeholder="Enter your full name" type="text"/>
+</div>
+</div>
+<!-- Phone Number -->
+<div class="space-y-1.5">
+<label class="text-sm font-bold text-on-surface ml-1 uppercase tracking-wider">Phone Number</label>
+<div class="flex gap-2">
+<div class="flex items-center gap-2 px-3 bg-surface-container-low rounded-xl cursor-pointer hover:bg-surface-container-highest transition-colors">
+<img alt="National flag icon for country code selection" class="w-6 h-4 rounded-sm" data-alt="vibrant rectangular national flag icon with soft rounded corners representing country telephone prefix selection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJKt0wc0FyRsQQUYjm0AawLiR0bVgjkmS9H58gLDNUr-y-K4iT8S9xOAqT0zVfb2xHQbpU0ukK5d1umOmUrDIbsJzJS1upTgjC0QR0MUiuhmsjpDGq9OFubc1mfCarv8nEtVAe-j9qouyBPZ74o74KX5HvnHJnv2h8vxw3BDa3zOQ7qKq4vWCIN9NcOOzArugE5XChLxyZ1NOKmAeDV7VkzdrlA_9lVETXD9fnnct0YAtmEVoX9nv01DY4-2dXmC6I2R8vDKn4Ink"/>
+<span class="font-bold text-sm text-on-surface">+1</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</div>
+<input class="flex-1 px-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary-container transition-all outline-none text-on-surface placeholder:text-outline" placeholder="000 000 0000" type="tel"/>
+</div>
+</div>
+<!-- Email -->
+<div class="space-y-1.5">
+<label class="text-sm font-bold text-on-surface ml-1 uppercase tracking-wider">Email Address</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant">mail</span>
+<input class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary-container transition-all outline-none text-on-surface placeholder:text-outline" placeholder="name@example.com" type="email"/>
+</div>
+</div>
+<!-- Password -->
+<div class="space-y-1.5">
+<label class="text-sm font-bold text-on-surface ml-1 uppercase tracking-wider">Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant">lock</span>
+<input class="w-full pl-12 pr-12 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary-container transition-all outline-none text-on-surface placeholder:text-outline" placeholder="Create a strong password" type="password"/>
+<button class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-outline-variant hover:text-primary transition-colors" type="button">visibility</button>
+</div>
+</div>
+<!-- Confirm Password -->
+<div class="space-y-1.5">
+<label class="text-sm font-bold text-on-surface ml-1 uppercase tracking-wider">Confirm Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant">verified_user</span>
+<input class="w-full pl-12 pr-12 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary-container transition-all outline-none text-on-surface placeholder:text-outline" placeholder="Repeat your password" type="password"/>
+</div>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-5 bg-primary text-on-primary rounded-full font-bold text-lg shadow-[0px_12px_32px_rgba(156,63,0,0.15)] hover:scale-[1.02] active:scale-95 transition-all mt-4" type="submit">
+                Create Account
+            </button>
+</form>
+<!-- Social Divider -->
+<div class="w-full flex items-center gap-4 my-8">
+<div class="h-[1px] flex-1 bg-surface-container-highest"></div>
+<span class="text-sm font-semibold text-outline-variant whitespace-nowrap">Or continue with</span>
+<div class="h-[1px] flex-1 bg-surface-container-highest"></div>
+</div>
+<!-- Social Buttons -->
+<div class="w-full grid grid-cols-2 gap-4 mb-8">
+<button class="flex items-center justify-center gap-3 py-4 px-6 border-2 border-surface-container-highest rounded-2xl hover:bg-surface-container-low hover:border-primary-container/20 transition-all active:scale-95">
+<img alt="Google G logo" class="w-5 h-5" data-alt="clean flat design of the Google multi-color G icon on a transparent background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCegtlGHDE1Fw9HPjlPyIvKslwPj2KSamY7Ph5HeX5VY9x2HmLtc4zBc20F9HT_wDrjBhRGfPjeN_EtDus96Tn2iWdLLMzZBSKxe0aKI_Dru7pXlX6Ozfh2oe44nYWUE6zO_ZEp7cpupvpqj5cpc5PCZkBg3bX6s8fuSEBMOI0ngDOkWLDdW4mxMz3XX_GG29gR2Uin6z54kMSLxi32IB3zDeY010FqWJlV8YXaydoE0ncoWncyI1RXQXrPiEI-z_zWP-3xtgqzlvU"/>
+<span class="font-bold text-on-surface">Google</span>
+</button>
+<button class="flex items-center justify-center gap-3 py-4 px-6 border-2 border-surface-container-highest rounded-2xl hover:bg-surface-container-low hover:border-primary-container/20 transition-all active:scale-95">
+<img alt="Apple logo" class="w-5 h-5" data-alt="minimalist black apple brand logo on a white background, high-end professional aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEfCuAeIcJeWJU4vKr72tmz-xfBD7hVpWjbI6mcq9b_87Qrq_A1zLmuGPIx6nmdjyqhZwxVHtAZf5_-2BYuZHZVwisqP2LyXszykkQotkIeQzuejNT3Q830nPp2W44wahIf7428t6pvhOoWsqBCI9aikaPL6Lzbg6tejnDn9ketJQVqI3C2ZHqUVCBPTViJUS4SqgV0EgtAFKAvfijNtMBhCTa-OCDmWRCpGZWTZzP_bulz1pVl3W-nWeoC3G_hDVOUcVjTRXnBw8"/>
+<span class="font-bold text-on-surface">Apple</span>
+</button>
+</div>
+<!-- Footer Link -->
+<p class="font-medium text-on-surface-variant">
+            Already have an account? <a class="text-primary font-bold hover:underline" href="#">Log In</a>
+</p>
+</main>
+<!-- Aesthetic Bottom Wave (Visual Separation) -->
+<div class="mt-auto pointer-events-none relative h-24 w-full overflow-hidden">
+<svg class="absolute bottom-0 w-full h-full fill-surface-container-low" viewbox="0 0 1440 320">
+<path d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+</svg>
+</div>
+</body></html>

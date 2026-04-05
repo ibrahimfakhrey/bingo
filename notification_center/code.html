@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Fredoka+One&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-dim": "#005386",
+                        "error-dim": "#b92902",
+                        "error-container": "#f95630",
+                        "surface-variant": "#e3dcd4",
+                        "on-tertiary": "#fff0e3",
+                        "inverse-primary": "#fe6b00",
+                        "on-secondary-fixed": "#00375b",
+                        "outline-variant": "#b2aca7",
+                        "surface-container-highest": "#e3dcd4",
+                        "on-secondary": "#ecf3ff",
+                        "tertiary-dim": "#704700",
+                        "tertiary": "#805100",
+                        "primary-fixed": "#ff7a2f",
+                        "surface-container": "#eee7e0",
+                        "primary-dim": "#893600",
+                        "surface-container-low": "#f7f0e9",
+                        "secondary-fixed-dim": "#93c8ff",
+                        "on-error-container": "#520c00",
+                        "surface-dim": "#dbd3cc",
+                        "surface-bright": "#fcf5ef",
+                        "primary": "#9c3f00",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#fcf5ef",
+                        "on-secondary-fixed-variant": "#005488",
+                        "on-secondary-container": "#004b79",
+                        "surface": "#fcf5ef",
+                        "on-error": "#ffefec",
+                        "tertiary-fixed": "#feb246",
+                        "tertiary-container": "#feb246",
+                        "secondary-fixed": "#afd5ff",
+                        "primary-fixed-dim": "#f66700",
+                        "outline": "#7a7671",
+                        "primary-container": "#ff7a2f",
+                        "on-primary-fixed-variant": "#4f1c00",
+                        "on-surface": "#312e2b",
+                        "secondary-container": "#afd5ff",
+                        "on-tertiary-fixed-variant": "#623d00",
+                        "on-tertiary-fixed": "#3a2300",
+                        "on-tertiary-container": "#563500",
+                        "on-primary-fixed": "#000000",
+                        "secondary": "#005f99",
+                        "on-background": "#312e2b",
+                        "surface-container-high": "#e8e1da",
+                        "on-surface-variant": "#5f5b56",
+                        "on-primary": "#fff0ea",
+                        "on-primary-container": "#401500",
+                        "tertiary-fixed-dim": "#eea439",
+                        "surface-tint": "#9c3f00",
+                        "inverse-on-surface": "#a19c97",
+                        "error": "#b02500",
+                        "inverse-surface": "#100e0b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Be Vietnam Pro', sans-serif; background-color: #fcf5ef; color: #312e2b; }
+        .fredoka { font-family: 'Fredoka One', cursive; }
+        .jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar from JSON Authority -->
+<nav class="w-full top-0 sticky bg-[#fcf5ef] dark:bg-slate-900 z-50 flex items-center justify-between px-6 py-4 w-full no-border space-y-8 flat no shadows">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center overflow-hidden">
+<img alt="Pingoo Mascot" class="w-8 h-8" data-alt="Cute 3D rendered cartoon penguin mascot with a friendly smile wearing a small academic cap" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC83ONKwDMQQZOldZB6u6knxoH4ALWGKhrxa0f7I41n9K0NhCQUO4yqMnaT61s7wAQJ2h0lC9ELV9Dydmt3vlcxOexxOxLuTmUtjU9kHLQh0KznwbcpRcd0N58P8sDkEPITYaBcW0mnaKC9iz7cN-rOr8nVgoSwbr17TJhEz288v3RM-viF5WrktF-BJv8GZtBcZk9u0YVNZnmsTdRkkP5lssfPbl2fP5s1OfL2tcAsC8BcA44h5t1ssjrkJrHauIzSaeZJtqZ2Iqs"/>
+</div>
+<span class="font-['Fredoka_One'] text-2xl text-orange-600">Pingoo College</span>
+</div>
+<div class="scale-95 active:duration-150 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-orange-700 dark:text-orange-500 text-2xl" data-icon="settings">settings</span>
+</div>
+</nav>
+<!-- Content Canvas -->
+<main class="px-6 pb-24 max-w-2xl mx-auto">
+<!-- Header Section -->
+<div class="flex items-end justify-between mt-8 mb-6">
+<div>
+<h1 class="jakarta font-extrabold text-3xl text-on-surface tracking-tight">Notifications 🔔</h1>
+<p class="text-on-surface-variant text-sm mt-1">Stay updated with your child's journey</p>
+</div>
+<button class="text-primary font-bold text-sm mb-1 hover:underline transition-all">Mark all as read</button>
+</div>
+<!-- Notification List -->
+<div class="space-y-8">
+<!-- Group: Today -->
+<section>
+<h2 class="jakarta font-bold text-xs uppercase tracking-widest text-outline mb-4 ml-2">Today</h2>
+<div class="space-y-3">
+<!-- Unread Item (Check-in) -->
+<div class="bg-[#FFF0E0] p-4 rounded-lg flex items-start gap-4 shadow-[0px_4px_12px_rgba(156,63,0,0.04)] transition-all hover:scale-[1.01]">
+<div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-green-600" data-icon="check_circle">check_circle</span>
+</div>
+<div class="flex-1">
+<h3 class="font-bold text-on-surface leading-snug">Ahmed has been checked in ✅</h3>
+<p class="text-on-surface-variant text-sm mt-0.5">Today, 8:02 AM</p>
+</div>
+<div class="w-2.5 h-2.5 bg-primary rounded-full mt-2"></div>
+</div>
+<!-- Unread Item (Announcement) -->
+<div class="bg-[#FFF0E0] p-4 rounded-lg flex items-start gap-4 shadow-[0px_4px_12px_rgba(156,63,0,0.04)] transition-all hover:scale-[1.01]">
+<div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-orange-600" data-icon="campaign">campaign</span>
+</div>
+<div class="flex-1">
+<h3 class="font-bold text-on-surface leading-snug">New Winter Term Schedule Released</h3>
+<p class="text-on-surface-variant text-sm mt-0.5">Today, 7:15 AM</p>
+</div>
+<div class="w-2.5 h-2.5 bg-primary rounded-full mt-2"></div>
+</div>
+</div>
+</section>
+<!-- Group: Yesterday -->
+<section>
+<h2 class="jakarta font-bold text-xs uppercase tracking-widest text-outline mb-4 ml-2">Yesterday</h2>
+<div class="space-y-3">
+<!-- Read Item (Daily Report) -->
+<div class="bg-white p-4 rounded-lg flex items-start gap-4 shadow-[0px_2px_8px_rgba(0,0,0,0.02)] transition-all hover:scale-[1.01]">
+<div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-blue-600" data-icon="article">article</span>
+</div>
+<div class="flex-1">
+<h3 class="font-bold text-on-surface leading-snug">Daily Report for Ahmed is ready</h3>
+<p class="text-on-surface-variant text-sm mt-0.5">Yesterday, 4:30 PM</p>
+</div>
+</div>
+<!-- Read Item (Payment) -->
+<div class="bg-white p-4 rounded-lg flex items-start gap-4 shadow-[0px_2px_8px_rgba(0,0,0,0.02)] transition-all hover:scale-[1.01]">
+<div class="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-yellow-600" data-icon="payments">payments</span>
+</div>
+<div class="flex-1">
+<h3 class="font-bold text-on-surface leading-snug">Monthly Tuition Reminder 💳</h3>
+<p class="text-on-surface-variant text-sm mt-0.5">Yesterday, 9:00 AM</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Group: This Week -->
+<section>
+<h2 class="jakarta font-bold text-xs uppercase tracking-widest text-outline mb-4 ml-2">This Week</h2>
+<div class="space-y-3">
+<!-- Read Item (Check-out) -->
+<div class="bg-white p-4 rounded-lg flex items-start gap-4 shadow-[0px_2px_8px_rgba(0,0,0,0.02)] transition-all hover:scale-[1.01]">
+<div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-green-600" data-icon="logout">logout</span>
+</div>
+<div class="flex-1">
+<h3 class="font-bold text-on-surface leading-snug">Ahmed has been checked out</h3>
+<p class="text-on-surface-variant text-sm mt-0.5">Monday, 3:45 PM</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Optional Empty State Section (Hidden by default, shown for logic) -->
+<div class="hidden flex-col items-center justify-center py-20 text-center">
+<div class="relative mb-6">
+<div class="absolute -top-4 -right-4 bg-tertiary-container/20 w-32 h-32 rounded-full blur-2xl"></div>
+<img alt="Empty Inbox Mascot" class="w-32 h-32 relative z-10" data-alt="Pingoo the penguin looking curiously into an empty, stylish white mailbox with a soft golden glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5jstRHj1etzGGyUKVavkitHPMIulBCELtSFQsvGFhsh1VctQRki-00MtR94xrjLOobt8LmFxCwyMh6spkGTqUSDv2Xhw-Y0WgYwBxm0rCXhxbl5Fz1c0xh2rVYwSsw4iXccE-8YF5XL8T2K-57Jd7N1ziOQE0KqjeiXpM1rJVqaQSxFJHZ7elP6CmWG03E3ipMY9uf8xCKNqfVW0bFAV-gmgSRXtQyv6Q_Vk_BPp2scxT9qnzlziwSncs6Xvya-RGDIHQrmGM6S4"/>
+</div>
+<h3 class="fredoka text-2xl text-on-surface">No new notifications 🐧</h3>
+<p class="text-on-surface-variant mt-2 max-w-[240px]">Pingoo is taking a nap while waiting for new updates!</p>
+</div>
+</main>
+<!-- BottomNavBar - Mapping active state to 'Alerts' per JSON labels -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md z-50 rounded-t-[32px] shadow-[0px_-12px_32px_rgba(156,63,0,0.06)] no-border pt-2">
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-1 hover:bg-orange-50 dark:hover:bg-orange-900/20 transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-1 hover:bg-orange-50 dark:hover:bg-orange-900/20 transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="search">search</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold">Discover</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-1 hover:bg-orange-50 dark:hover:bg-orange-900/20 transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="school">school</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold">Enroll</span>
+</a>
+<!-- ACTIVE TAB: Alerts -->
+<a class="flex flex-col items-center justify-center bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 rounded-full px-4 py-1 scale-110 transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="notifications" style="font-variation-settings: 'FILL' 1;">notifications</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold">Alerts</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-1 hover:bg-orange-50 dark:hover:bg-orange-900/20 transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="location_on">location_on</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold">Branches</span>
+</a>
+</nav>
+</body></html>

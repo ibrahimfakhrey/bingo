@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payments &amp; Invoices | Pingoo College</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Fredoka+One&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #fcf5ef;
+        }
+        h1, h2, h3, .brand-font {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .pingoo-logo {
+            font-family: 'Fredoka One', cursive;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-dim": "#005386",
+                    "error-dim": "#b92902",
+                    "error-container": "#f95630",
+                    "surface-variant": "#e3dcd4",
+                    "on-tertiary": "#fff0e3",
+                    "on-secondary-fixed": "#00375b",
+                    "inverse-primary": "#fe6b00",
+                    "surface-container-highest": "#e3dcd4",
+                    "on-secondary": "#ecf3ff",
+                    "outline-variant": "#b2aca7",
+                    "tertiary-dim": "#704700",
+                    "tertiary": "#805100",
+                    "primary-fixed": "#ff7a2f",
+                    "primary-dim": "#893600",
+                    "surface-container": "#eee7e0",
+                    "surface-dim": "#dbd3cc",
+                    "surface-container-low": "#f7f0e9",
+                    "secondary-fixed-dim": "#93c8ff",
+                    "on-error-container": "#520c00",
+                    "background": "#fcf5ef",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#9c3f00",
+                    "surface-bright": "#fcf5ef",
+                    "surface": "#fcf5ef",
+                    "on-error": "#ffefec",
+                    "on-secondary-fixed-variant": "#005488",
+                    "on-secondary-container": "#004b79",
+                    "outline": "#7a7671",
+                    "primary-container": "#ff7a2f",
+                    "tertiary-fixed": "#feb246",
+                    "tertiary-container": "#feb246",
+                    "secondary-fixed": "#afd5ff",
+                    "primary-fixed-dim": "#f66700",
+                    "on-tertiary-container": "#563500",
+                    "on-primary-fixed": "#000000",
+                    "secondary-container": "#afd5ff",
+                    "on-tertiary-fixed-variant": "#623d00",
+                    "on-tertiary-fixed": "#3a2300",
+                    "on-primary-fixed-variant": "#4f1c00",
+                    "on-surface": "#312e2b",
+                    "on-background": "#312e2b",
+                    "secondary": "#005f99",
+                    "on-surface-variant": "#5f5b56",
+                    "on-primary": "#fff0ea",
+                    "surface-container-high": "#e8e1da",
+                    "surface-tint": "#9c3f00",
+                    "inverse-on-surface": "#a19c97",
+                    "tertiary-fixed-dim": "#eea439",
+                    "on-primary-container": "#401500",
+                    "inverse-surface": "#100e0b",
+                    "error": "#b02500"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            }
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-background min-h-screen pb-32">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-40 bg-[#fcf5ef] dark:bg-stone-900 flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-4">
+<button class="hover:scale-105 transition-transform duration-200 active:scale-95 text-primary">
+<span class="material-symbols-outlined text-2xl" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold text-lg text-on-surface">Payments &amp; Invoices 💳</h1>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container overflow-hidden">
+<img alt="Mascot" data-alt="Cute 3D render of a friendly penguin mascot with a small graduation cap on a warm soft background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEfn_M0YBgRo67umXpB1YO27eAeg6csNAaqJpS0Y8Lq6oPP0UO5l0RSAF_i2zk4Gn9sfJKN1U-DJrCidlmm7YWiBvG08aekGKZfLzPuBXNDdl8c-kTQBQdZXEmm2n2p_7LiOUCQUZUrRJ7k8_Xt85qApIPwo2xiwvL6z7R3xAakMMiALWv2WDtvK74dwy6l5_uTuySpRZrHLdPunytcVxlq9RU-LE3JEgjtIWQ5GYeiKrXnM6wYLltcySXqBVVKN_MD1eMT8_4vas"/>
+</div>
+<span class="material-symbols-outlined text-stone-500" data-icon="notifications">notifications</span>
+</div>
+</header>
+<main class="px-6 space-y-8 max-w-2xl mx-auto">
+<!-- Summary Card -->
+<section class="relative overflow-hidden bg-primary p-8 rounded-[24px] text-white shadow-lg">
+<!-- Decorative Wave Shape -->
+<div class="absolute -right-10 -top-10 w-32 h-32 bg-primary-container rounded-full opacity-20"></div>
+<div class="relative z-10 space-y-4">
+<p class="text-on-primary/80 font-medium tracking-wide">Total Paid This Year</p>
+<h2 class="text-4xl font-extrabold tracking-tight">2,430 EGP</h2>
+<div class="flex gap-4 pt-2">
+<div class="flex items-center gap-2 bg-white/15 px-4 py-2 rounded-full backdrop-blur-sm border border-white/10">
+<span class="material-symbols-outlined text-lg" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-sm font-semibold">5 Paid</span>
+</div>
+<div class="flex items-center gap-2 bg-white/15 px-4 py-2 rounded-full backdrop-blur-sm border border-white/10">
+<span class="material-symbols-outlined text-lg" data-icon="warning" data-weight="fill" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="text-sm font-semibold">1 Upcoming</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Filters Section -->
+<section class="flex gap-2 overflow-x-auto no-scrollbar py-2">
+<button class="bg-primary text-white px-6 py-2 rounded-full font-bold shadow-md transition-transform hover:scale-105">All</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-2 rounded-full font-medium hover:bg-surface-container-highest transition-colors">Paid</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-2 rounded-full font-medium hover:bg-surface-container-highest transition-colors">Upcoming</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-2 rounded-full font-medium hover:bg-surface-container-highest transition-colors">Overdue</button>
+</section>
+<!-- Transactions List -->
+<section class="space-y-4">
+<h3 class="text-lg font-bold text-on-surface px-1">Recent Transactions</h3>
+<!-- Overdue Card -->
+<div class="bg-surface-container-lowest p-5 rounded-[24px] shadow-[0px_12px_32px_rgba(156,63,0,0.04)] border-l-8 border-error flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="calendar_today">calendar_today</span>
+<span class="text-xs font-medium">March 1, 2026</span>
+</div>
+<h4 class="font-bold text-on-surface">Creative Arts Workshop</h4>
+</div>
+<div class="text-right">
+<p class="text-error font-extrabold text-lg">350 EGP</p>
+<div class="mt-1 bg-error/10 text-error px-3 py-1 rounded-full text-[10px] font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" data-icon="error" data-weight="fill" style="font-variation-settings: 'FILL' 1;">error</span>
+                            🚨 Overdue
+                        </div>
+</div>
+</div>
+<div class="flex justify-end pt-2">
+<button class="bg-error text-white px-6 py-2 rounded-full text-sm font-bold shadow-sm hover:scale-105 transition-transform active:scale-95">Pay Now</button>
+</div>
+</div>
+<!-- Upcoming Card -->
+<div class="bg-surface-container-lowest p-5 rounded-[24px] shadow-[0px_12px_32px_rgba(156,63,0,0.04)] border-l-8 border-primary flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="calendar_today">calendar_today</span>
+<span class="text-xs font-medium">May 1, 2026</span>
+</div>
+<h4 class="font-bold text-on-surface">Little Explorers Science Club</h4>
+</div>
+<div class="text-right">
+<p class="text-primary font-extrabold text-lg">450 EGP</p>
+<div class="mt-1 bg-primary/10 text-primary px-3 py-1 rounded-full text-[10px] font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" data-icon="schedule" data-weight="fill" style="font-variation-settings: 'FILL' 1;">schedule</span>
+                            ⏰ Due in 26 days
+                        </div>
+</div>
+</div>
+<div class="flex justify-end pt-2">
+<button class="border-2 border-primary text-primary px-6 py-1.5 rounded-full text-sm font-bold hover:bg-primary/5 transition-colors active:scale-95">Pay Now</button>
+</div>
+</div>
+<!-- Paid Card -->
+<div class="bg-surface-container-lowest p-5 rounded-[24px] shadow-[0px_12px_32px_rgba(156,63,0,0.04)] border-l-8 border-green-500 flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="calendar_today">calendar_today</span>
+<span class="text-xs font-medium">April 1, 2026</span>
+</div>
+<h4 class="font-bold text-on-surface">Little Explorers Science Club</h4>
+</div>
+<div class="text-right">
+<p class="text-green-600 font-extrabold text-lg">405 EGP</p>
+<div class="mt-1 bg-green-50 text-green-700 px-3 py-1 rounded-full text-[10px] font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            ✅ Paid
+                        </div>
+</div>
+</div>
+<div class="flex justify-start items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-sm text-stone-400" data-icon="description">description</span>
+<a class="text-xs font-semibold text-stone-500 hover:text-primary transition-colors" href="#">Download Receipt 📄</a>
+</div>
+</div>
+<!-- Paid Card 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-[24px] shadow-[0px_12px_32px_rgba(156,63,0,0.04)] border-l-8 border-green-500 opacity-80 flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="calendar_today">calendar_today</span>
+<span class="text-xs font-medium">March 1, 2026</span>
+</div>
+<h4 class="font-bold text-on-surface">Digital Arts 101</h4>
+</div>
+<div class="text-right">
+<p class="text-green-600 font-extrabold text-lg">405 EGP</p>
+<div class="mt-1 bg-green-50 text-green-700 px-3 py-1 rounded-full text-[10px] font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            ✅ Paid
+                        </div>
+</div>
+</div>
+<div class="flex justify-start items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-sm text-stone-400" data-icon="description">description</span>
+<a class="text-xs font-semibold text-stone-500 hover:text-primary transition-colors" href="#">Download Receipt 📄</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-white/80 dark:bg-stone-950/80 backdrop-blur-md rounded-t-[32px] shadow-[0px_-12px_32px_rgba(156,63,0,0.06)]">
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-2 hover:bg-stone-50 dark:hover:bg-stone-800 rounded-full transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px]">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-2 hover:bg-stone-50 dark:hover:bg-stone-800 rounded-full transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="child_care">child_care</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px]">My Child</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-2 hover:bg-stone-50 dark:hover:bg-stone-800 rounded-full transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px]">Courses</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-2 hover:bg-stone-50 dark:hover:bg-stone-800 rounded-full transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px]">Branches</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 rounded-[24px] px-4 py-2 scale-110 transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px]">Profile</span>
+</a>
+</nav>
+<!-- Floating Decoration (Editorial Aesthetic) -->
+<div class="fixed bottom-32 -left-12 w-24 h-24 bg-tertiary-container/20 rounded-full blur-2xl -z-10"></div>
+<div class="fixed top-1/2 -right-8 w-16 h-16 bg-primary-container/10 rounded-full blur-xl -z-10"></div>
+</body></html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pingoo College — App Design Preview</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #1c1c1e;
+      color: #e8e8f0;
+      min-height: 100vh;
+    }
+
+    /* ── Subtle noise / grain texture overlay ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Header ── */
+    header {
+      position: relative;
+      z-index: 1;
+      padding: 56px 60px 40px;
+      text-align: left;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+    }
+    header p {
+      margin-top: 6px;
+      font-size: 0.88rem;
+      color: #666;
+    }
+
+    /* ── Section ── */
+    .section {
+      position: relative;
+      z-index: 1;
+      padding: 52px 60px 0;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 32px;
+    }
+
+    /* ── Grid ── */
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 36px;
+      align-items: flex-start;
+    }
+
+    /* ── Card ── */
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.22s cubic-bezier(.25,.46,.45,.94);
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card:hover .phone-shell {
+      box-shadow:
+        0 32px 64px rgba(0,0,0,0.7),
+        0 0 0 1px rgba(255,255,255,0.08);
+    }
+
+    /* ── Phone shell ── */
+    .phone-shell {
+      width: 210px;
+      height: 430px;
+      border-radius: 40px;
+      background: #2a2a2c;
+      border: 2px solid #3a3a3c;
+      padding: 14px 10px;
+      box-shadow:
+        0 16px 48px rgba(0,0,0,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.06);
+      position: relative;
+      transition: box-shadow 0.22s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Dynamic island */
+    .phone-shell::before {
+      content: '';
+      position: absolute;
+      top: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 26px;
+      background: #0d0d0d;
+      border-radius: 20px;
+      z-index: 10;
+    }
+
+    /* Side button */
+    .phone-shell::after {
+      content: '';
+      position: absolute;
+      right: -3px;
+      top: 100px;
+      width: 3px;
+      height: 60px;
+      background: #3a3a3c;
+      border-radius: 0 2px 2px 0;
+    }
+
+    .phone-screen {
+      flex: 1;
+      border-radius: 30px;
+      overflow: hidden;
+      margin-top: 18px;
+      background: #111;
+    }
+    .phone-screen img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+    }
+
+    /* ── Card label ── */
+    .card-label {
+      font-size: 0.82rem;
+      color: #aaa;
+      text-align: center;
+      max-width: 180px;
+      line-height: 1.4;
+      font-weight: 400;
+    }
+
+    /* ── Footer ── */
+    footer {
+      position: relative;
+      z-index: 1;
+      margin-top: 80px;
+      padding: 32px 60px;
+      font-size: 0.78rem;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Pingoo College</h1>
+  <p>App Design Preview &nbsp;·&nbsp; 21 Screens &nbsp;·&nbsp; Click any screen to open</p>
+</header>
+
+<!-- ── 1. Launch ── -->
+<section class="section">
+  <div class="section-label">Launch</div>
+  <div class="grid">
+
+    <a class="card" href="splash_screen.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="splash_screen.png" alt="Splash Screen" /></div></div>
+      <span class="card-label">Splash Screen</span>
+    </a>
+
+    <a class="card" href="onboarding_1.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="onboarding_1.png" alt="Onboarding 1" /></div></div>
+      <span class="card-label">Onboarding 1</span>
+    </a>
+
+    <a class="card" href="onboarding_2.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="onboarding_2.png" alt="Onboarding 2" /></div></div>
+      <span class="card-label">Onboarding 2</span>
+    </a>
+
+    <a class="card" href="onboarding_3.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="onboarding_3.png" alt="Onboarding 3" /></div></div>
+      <span class="card-label">Onboarding 3</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- ── 2. Authentication ── -->
+<section class="section">
+  <div class="section-label">Authentication</div>
+  <div class="grid">
+
+    <a class="card" href="login.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="login.png" alt="Login" /></div></div>
+      <span class="card-label">Login</span>
+    </a>
+
+    <a class="card" href="sign_up.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="sign_up.png" alt="Sign Up" /></div></div>
+      <span class="card-label">Sign Up</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- ── 3. Home ── -->
+<section class="section">
+  <div class="section-label">Home</div>
+  <div class="grid">
+
+    <a class="card" href="home_dashboard.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="home_dashboard.png" alt="Home Dashboard" /></div></div>
+      <span class="card-label">Home Dashboard</span>
+    </a>
+
+    <a class="card" href="notification_center.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="notification_center.png" alt="Notification Center" /></div></div>
+      <span class="card-label">Notification Center</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- ── 4. Branches ── -->
+<section class="section">
+  <div class="section-label">Branches</div>
+  <div class="grid">
+
+    <a class="card" href="branch_selection.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="branch_selection.png" alt="Branch Selection" /></div></div>
+      <span class="card-label">Branch Selection</span>
+    </a>
+
+    <a class="card" href="branch_details.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="branch_details.png" alt="Branch Details" /></div></div>
+      <span class="card-label">Branch Details</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- ── 5. Courses ── -->
+<section class="section">
+  <div class="section-label">Courses</div>
+  <div class="grid">
+
+    <a class="card" href="course_discovery.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="course_discovery.png" alt="Course Discovery" /></div></div>
+      <span class="card-label">Course Discovery</span>
+    </a>
+
+    <a class="card" href="course_materials.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="course_materials.png" alt="Course Materials" /></div></div>
+      <span class="card-label">Course Materials</span>
+    </a>
+
+    <a class="card" href="course_completion_certificate.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="course_completion_certificate.png" alt="Completion Certificate" /></div></div>
+      <span class="card-label">Completion Certificate</span>
+    </a>
+
+    <a class="card" href="enrollment_form_step_1.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="enrollment_form_step_1.png" alt="Enrollment Form" /></div></div>
+      <span class="card-label">Enrollment Form</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- ── 6. Schedule & Progress ── -->
+<section class="section">
+  <div class="section-label">Schedule &amp; Progress</div>
+  <div class="grid">
+
+    <a class="card" href="my_schedule.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="my_schedule.png" alt="My Schedule" /></div></div>
+      <span class="card-label">My Schedule</span>
+    </a>
+
+    <a class="card" href="daily_progress_report.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="daily_progress_report.png" alt="Daily Progress Report" /></div></div>
+      <span class="card-label">Daily Progress Report</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- ── 7. Payments ── -->
+<section class="section">
+  <div class="section-label">Payments</div>
+  <div class="grid">
+
+    <a class="card" href="payment_history.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="payment_history.png" alt="Payment History" /></div></div>
+      <span class="card-label">Payment History</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- ── 8. Messaging ── -->
+<section class="section">
+  <div class="section-label">Messaging</div>
+  <div class="grid">
+
+    <a class="card" href="messaging_chat.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="messaging_chat.png" alt="Messaging Chat" /></div></div>
+      <span class="card-label">Messaging Chat</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- ── 9. Student Notifications ── -->
+<section class="section">
+  <div class="section-label">Student Notifications</div>
+  <div class="grid">
+
+    <a class="card" href="student_arrival_notification.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="student_arrival_notification.png" alt="Arrival Notification" /></div></div>
+      <span class="card-label">Arrival Notification</span>
+    </a>
+
+    <a class="card" href="student_dismissal_notification.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="student_dismissal_notification.png" alt="Dismissal Notification" /></div></div>
+      <span class="card-label">Dismissal Notification</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- ── 10. Profile ── -->
+<section class="section">
+  <div class="section-label">Profile</div>
+  <div class="grid">
+
+    <a class="card" href="teacher_profile.html" target="_blank">
+      <div class="phone-shell"><div class="phone-screen"><img src="teacher_profile.png" alt="Teacher Profile" /></div></div>
+      <span class="card-label">Teacher Profile</span>
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  Pingoo College &nbsp;·&nbsp; Design Preview &nbsp;·&nbsp; Confidential
+</footer>
+
+</body>
+</html>

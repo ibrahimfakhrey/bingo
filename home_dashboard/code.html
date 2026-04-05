@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-dim": "#893600",
+                        "surface-container": "#eee7e0",
+                        "on-tertiary-container": "#563500",
+                        "on-error": "#ffefec",
+                        "on-surface": "#312e2b",
+                        "tertiary-fixed": "#feb246",
+                        "on-error-container": "#520c00",
+                        "on-primary-container": "#401500",
+                        "surface": "#fcf5ef",
+                        "tertiary-dim": "#704700",
+                        "error-container": "#f95630",
+                        "primary": "#9c3f00",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e3dcd4",
+                        "on-primary": "#fff0ea",
+                        "surface-variant": "#e3dcd4",
+                        "background": "#fcf5ef",
+                        "secondary-fixed-dim": "#93c8ff",
+                        "inverse-primary": "#fe6b00",
+                        "inverse-on-surface": "#a19c97",
+                        "primary-container": "#ff7a2f",
+                        "secondary-fixed": "#afd5ff",
+                        "secondary-dim": "#005386",
+                        "tertiary-container": "#feb246",
+                        "primary-fixed-dim": "#f66700",
+                        "on-secondary": "#ecf3ff",
+                        "surface-bright": "#fcf5ef",
+                        "on-secondary-container": "#004b79",
+                        "on-primary-fixed-variant": "#4f1c00",
+                        "outline-variant": "#b2aca7",
+                        "inverse-surface": "#100e0b",
+                        "surface-tint": "#9c3f00",
+                        "error": "#b02500",
+                        "on-surface-variant": "#5f5b56",
+                        "surface-container-high": "#e8e1da",
+                        "on-primary-fixed": "#000000",
+                        "error-dim": "#b92902",
+                        "surface-dim": "#dbd3cc",
+                        "on-tertiary": "#fff0e3",
+                        "secondary": "#005f99",
+                        "primary-fixed": "#ff7a2f",
+                        "surface-container-low": "#f7f0e9",
+                        "on-secondary-fixed-variant": "#005488",
+                        "on-secondary-fixed": "#00375b",
+                        "secondary-container": "#afd5ff",
+                        "outline": "#7a7671",
+                        "tertiary-fixed-dim": "#eea439",
+                        "on-tertiary-fixed-variant": "#623d00",
+                        "tertiary": "#805100",
+                        "on-tertiary-fixed": "#3a2300",
+                        "on-background": "#312e2b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        .fredoka { font-family: 'Fredoka One', cursive; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-24">
+<!-- Top Navigation Anchor (As described in JSON but styled per user prompt for Home Context) -->
+<header class="bg-primary-container text-on-primary rounded-b-xl px-6 pt-12 pb-8 shadow-sm">
+<div class="flex justify-between items-center max-w-5xl mx-auto">
+<div class="space-y-1">
+<h1 class="fredoka text-2xl tracking-tight leading-tight">Good Morning, Sarah! ☀️</h1>
+<div class="flex items-center gap-1.5 opacity-90">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span class="text-sm font-medium">Ahmed is at Nasr City</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative group cursor-pointer">
+<span class="material-symbols-outlined text-2xl" data-icon="notifications">notifications</span>
+<span class="absolute top-0 right-0 w-2.5 h-2.5 bg-[#FF6B00] border-2 border-primary-container rounded-full"></span>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-white/30 overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="portrait of a young mother with a warm smiling expression and natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVEu6BQtIPtuYY1QIiJc_68TNZoR4d13aBTmCU1rVvCQAM7oDL3aIldzjKzMd9gWH9Z1S7h-gHJv-CsHm91dCV9ySyy_ytl-C5p3saVFCdHiXg5UNGXz77JXTiqQWRcoLuHvSI4QMef6Olke5ObbuqWkFYc6IEivcM-yRyqubT2ECLA0UzMlPaAs4FdTdxnO0NXM4-75ISOX74o7Tn9jHFbrCJZRY4dMcFjo6deKPENjnJIEuL1TVUEjeUDvgsKpvKKxnt8KcxQqE"/>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-5xl mx-auto px-6 -mt-6">
+<!-- 1. Child Status Card (Bento Focus) -->
+<section class="mb-8">
+<div class="bg-surface-container-lowest rounded-lg border-2 border-primary/20 p-5 shadow-[0px_12px_32px_rgba(156,63,0,0.06)] relative overflow-hidden">
+<!-- Decorative Bubble -->
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary/5 rounded-full blur-2xl"></div>
+<div class="flex flex-col md:flex-row gap-6 items-center">
+<div class="relative">
+<div class="w-24 h-24 rounded-full border-4 border-primary-container overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="happy 4 year old boy with a bright smile playing in a colorful nursery setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOkQPbHufLV4cdwy7OYlxacW6Pxyz2a_y7tbo8zMUp31OIG13Ae9EKJuNsVfpcUKU3xFPHGwq0_HPggbyoioGgurECxWOOQC6hDrzEPZZmmLIx-c1u-zWWREdqonlDJopheQ9IEJjV4YpQ7ttXX4wWTm_Gjv_Jqw0W_1ifNCaFl9uIqWPaeiEtb7tWAWaAZEzTDuNC2FWm2Gt-Ue1vfONMKvcwiruA0rxg_nfnyOeZgRZKfraLvvuVV-5NXeko2YXkqtHCTw2wrCI"/>
+</div>
+<div class="absolute -bottom-1 -right-1 bg-white p-1.5 rounded-full shadow-md">
+<img class="w-6 h-6" data-alt="cute playful penguin mascot illustration for a children's learning app" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCziiHI9mLPGq4_enpPj948VTSzQm2X33rT-J9pz-F_DODsMrbblvXGL6jmlxUEXWWoYI3qV1v9uHgQxEk0du6nbeGZkK4SswaJdsxv1tXcR56-owCVrVsEy-jMjjgSzoTEob4CAsHOsgwAEHQC251GqAeQo2kwfCDaG3NtRA_pvDFrcUwIA3ad9X2cZ1RcLAX1_KQgwT5WJGZdsAIUGv42iQe0oOBohXbWqBCQxviUu9yidK40e8hgW9auKyO2ynwz71RExIHwgiY"/>
+</div>
+</div>
+<div class="flex-1 text-center md:text-left">
+<div class="flex flex-col md:flex-row md:items-center gap-3 mb-3 justify-center md:justify-start">
+<h2 class="fredoka text-2xl text-on-surface">Ahmed <span class="text-sm font-body font-normal text-on-surface-variant">(4 yrs)</span></h2>
+<span class="inline-flex items-center px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-full border border-emerald-100">
+<span class="material-symbols-outlined text-[14px] mr-1" data-icon="check_circle">check_circle</span>
+                                ✅ Checked In — 8:02 AM
+                            </span>
+</div>
+<div class="flex flex-wrap gap-3 justify-center md:justify-start">
+<button class="flex items-center gap-2 px-5 py-2.5 bg-primary text-on-primary rounded-full font-bold text-sm shadow-md hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-lg" data-icon="camera_alt">camera_alt</span>
+                                Today's Photos
+                            </button>
+<button class="flex items-center gap-2 px-5 py-2.5 bg-secondary-container text-on-secondary-container rounded-full font-bold text-sm shadow-sm hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-lg" data-icon="description">description</span>
+                                Daily Report
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Today's Schedule (Horizontal Carousel) -->
+<section class="mb-10">
+<div class="flex justify-between items-end mb-4">
+<h3 class="fredoka text-xl text-on-surface">Today's Schedule</h3>
+<button class="text-primary font-bold text-sm">View All</button>
+</div>
+<div class="flex gap-4 overflow-x-auto no-scrollbar pb-4 -mx-2 px-2">
+<!-- Schedule Cards -->
+<div class="flex-shrink-0 w-40 bg-surface-container-low rounded-lg p-4 flex flex-col items-center text-center group cursor-pointer hover:bg-white transition-colors">
+<div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="groups">groups</span>
+</div>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-1">09:00 AM</span>
+<span class="font-bold text-on-surface leading-tight">Morning Circle</span>
+</div>
+<div class="flex-shrink-0 w-40 bg-surface-container-low rounded-lg p-4 flex flex-col items-center text-center group cursor-pointer hover:bg-white transition-colors">
+<div class="w-14 h-14 bg-rose-100 text-rose-600 rounded-2xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="palette">palette</span>
+</div>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-1">10:30 AM</span>
+<span class="font-bold text-on-surface leading-tight">Art Class</span>
+</div>
+<div class="flex-shrink-0 w-40 bg-surface-container-low rounded-lg p-4 flex flex-col items-center text-center group cursor-pointer hover:bg-white transition-colors">
+<div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="auto_stories">auto_stories</span>
+</div>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-1">12:00 PM</span>
+<span class="font-bold text-on-surface leading-tight">Storytime</span>
+</div>
+<div class="flex-shrink-0 w-40 bg-surface-container-low rounded-lg p-4 flex flex-col items-center text-center group cursor-pointer hover:bg-white transition-colors">
+<div class="w-14 h-14 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="bedtime">bedtime</span>
+</div>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-1">01:30 PM</span>
+<span class="font-bold text-on-surface leading-tight">Nap Time</span>
+</div>
+</div>
+</section>
+<!-- 3. Explore Courses 📚 -->
+<section class="mb-10">
+<h3 class="fredoka text-xl text-on-surface mb-4">Explore Courses 📚</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Nursery Card -->
+<div class="bg-[#FF6B00] rounded-lg p-6 text-white relative overflow-hidden h-44 flex flex-col justify-between group cursor-pointer">
+<div class="absolute -right-4 -bottom-4 opacity-20 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[120px]" data-icon="child_care">child_care</span>
+</div>
+<div>
+<h4 class="fredoka text-2xl mb-1">Nursery Program</h4>
+<p class="text-white/80 text-sm max-w-[180px]">Early learning for ages 1-4 with playful activities.</p>
+</div>
+<div class="flex items-center gap-1 font-bold text-sm">
+                        Enroll Now <span class="material-symbols-outlined" data-icon="arrow_forward_ios">arrow_forward_ios</span>
+</div>
+</div>
+<!-- Academy Card -->
+<div class="bg-secondary rounded-lg p-6 text-white relative overflow-hidden h-44 flex flex-col justify-between group cursor-pointer">
+<div class="absolute -right-4 -bottom-4 opacity-20 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[120px]" data-icon="school">school</span>
+</div>
+<div>
+<h4 class="fredoka text-2xl mb-1">Academy</h4>
+<p class="text-white/80 text-sm max-w-[180px]">Structured prep classes for ages 5-7 years old.</p>
+</div>
+<div class="flex items-center gap-1 font-bold text-sm">
+                        Explore <span class="material-symbols-outlined" data-icon="arrow_forward_ios">arrow_forward_ios</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Announcements 📢 -->
+<section class="mb-8">
+<h3 class="fredoka text-xl text-on-surface mb-4">Announcements 📢</h3>
+<div class="bg-white rounded-lg border-l-[6px] border-primary-container p-5 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+<div class="flex justify-between items-start mb-2">
+<h5 class="font-bold text-on-surface text-lg">Parent-Teacher Meeting next Thursday</h5>
+<span class="text-xs font-bold text-on-surface-variant bg-surface-container px-2 py-1 rounded">2h ago</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-3">Join us to discuss your child's progress and the upcoming Spring Festival planning. Don't forget to RSVP...</p>
+<div class="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest">
+                    Read Details
+                    <span class="material-symbols-outlined text-xs" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Shared BottomNavBar (Executed from JSON Instructions) -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center px-4 pt-3 pb-6 bg-white dark:bg-stone-900 shadow-[0px_-12px_32px_rgba(156,63,0,0.06)] rounded-t-[32px]">
+<!-- Home (Active) -->
+<a class="flex flex-col items-center justify-center text-[#FF6B00] dark:text-[#FF6B00] after:content-['•'] after:text-[14px] after:leading-none after:mt-1 hover:scale-110 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider mt-0.5">Home</span>
+</a>
+<!-- My Child -->
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-[#9c3f00] transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="child_care">child_care</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider mt-0.5">My Child</span>
+</a>
+<!-- Courses -->
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-[#9c3f00] transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="auto_stories">auto_stories</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider mt-0.5">Courses</span>
+</a>
+<!-- Branches -->
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-[#9c3f00] transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="location_on">location_on</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider mt-0.5">Branches</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-[#9c3f00] transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider mt-0.5">Profile</span>
+</a>
+</nav>
+</body></html>

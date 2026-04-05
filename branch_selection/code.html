@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-dim": "#893600",
+                    "surface-container": "#eee7e0",
+                    "on-tertiary-container": "#563500",
+                    "on-error": "#ffefec",
+                    "on-surface": "#312e2b",
+                    "tertiary-fixed": "#feb246",
+                    "on-error-container": "#520c00",
+                    "on-primary-container": "#401500",
+                    "surface": "#fcf5ef",
+                    "tertiary-dim": "#704700",
+                    "error-container": "#f95630",
+                    "primary": "#9c3f00",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#e3dcd4",
+                    "on-primary": "#fff0ea",
+                    "surface-variant": "#e3dcd4",
+                    "background": "#fcf5ef",
+                    "secondary-fixed-dim": "#93c8ff",
+                    "inverse-primary": "#fe6b00",
+                    "inverse-on-surface": "#a19c97",
+                    "primary-container": "#ff7a2f",
+                    "secondary-fixed": "#afd5ff",
+                    "secondary-dim": "#005386",
+                    "tertiary-container": "#feb246",
+                    "primary-fixed-dim": "#f66700",
+                    "on-secondary": "#ecf3ff",
+                    "surface-bright": "#fcf5ef",
+                    "on-secondary-container": "#004b79",
+                    "on-primary-fixed-variant": "#4f1c00",
+                    "outline-variant": "#b2aca7",
+                    "inverse-surface": "#100e0b",
+                    "surface-tint": "#9c3f00",
+                    "error": "#b02500",
+                    "on-surface-variant": "#5f5b56",
+                    "surface-container-high": "#e8e1da",
+                    "on-primary-fixed": "#000000",
+                    "error-dim": "#b92902",
+                    "surface-dim": "#dbd3cc",
+                    "on-tertiary": "#fff0e3",
+                    "secondary": "#005f99",
+                    "primary-fixed": "#ff7a2f",
+                    "surface-container-low": "#f7f0e9",
+                    "on-secondary-fixed-variant": "#005488",
+                    "on-secondary-fixed": "#00375b",
+                    "secondary-container": "#afd5ff",
+                    "outline": "#7a7671",
+                    "tertiary-fixed-dim": "#eea439",
+                    "on-tertiary-fixed-variant": "#623d00",
+                    "tertiary": "#805100",
+                    "on-tertiary-fixed": "#3a2300",
+                    "on-background": "#312e2b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body": [
+                            "Be Vietnam Pro"
+                    ],
+                    "label": [
+                            "Be Vietnam Pro"
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .pingoo-wave {
+            clip-path: ellipse(150% 100% at 50% 0%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-white">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#fcf5ef] dark:bg-stone-900 flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="hover:scale-105 transition-transform duration-200 Active: scale-95 text-[#FF6B00]">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-['Fredoka_One'] text-2xl font-bold tracking-tight text-[#312e2b] dark:text-stone-100">Choose Your Branch 🏫</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="hover:scale-105 transition-transform duration-200 Active: scale-95 text-[#FF6B00]">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+</header>
+<!-- Separation Logic -->
+<div class="h-1 bg-[#f7f0e9] dark:bg-stone-800 mt-[72px]"></div>
+<main class="max-w-2xl mx-auto px-6 pt-8 pb-32">
+<!-- Hero Section -->
+<div class="mb-8">
+<p class="text-on-surface-variant text-lg font-medium leading-relaxed">Select the Pingoo College branch closest to you.</p>
+</div>
+<!-- Search Bar -->
+<div class="mb-10 relative">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="search">search</span>
+</div>
+<input class="w-full bg-surface-container-lowest border-none rounded-2xl py-5 pl-14 pr-6 text-on-surface font-medium placeholder:text-outline-variant shadow-[0px_12px_32px_rgba(156,63,0,0.06)] focus:ring-2 focus:ring-primary-container transition-all outline-none" placeholder="Search branches or areas..." type="text"/>
+</div>
+<!-- Branch List -->
+<div class="space-y-4">
+<!-- Selected Card -->
+<div class="group relative flex items-center justify-between p-6 bg-primary-container/10 border-l-[6px] border-primary rounded-2xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+<div class="flex items-start gap-5">
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div>
+<h3 class="text-xl font-bold font-headline text-primary-dim">Nasr City</h3>
+<p class="text-on-surface-variant font-medium mt-1">10th District, Cairo</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-3xl font-bold" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Standard Card 1 -->
+<div class="group relative flex items-center justify-between p-6 bg-surface-container-lowest border-l-[6px] border-transparent rounded-2xl transition-all duration-300 hover:border-primary-container hover:bg-surface-container-low hover:scale-[1.02] cursor-pointer shadow-[0px_12px_32px_rgba(156,63,0,0.04)]">
+<div class="flex items-start gap-5">
+<div class="bg-surface-container-low p-3 rounded-xl">
+<span class="material-symbols-outlined text-on-surface-variant text-3xl" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h3 class="text-xl font-bold font-headline text-on-surface">Maadi Branch</h3>
+<p class="text-on-surface-variant font-medium mt-1">Road 9, Maadi</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary-container text-3xl font-bold" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Standard Card 2 -->
+<div class="group relative flex items-center justify-between p-6 bg-surface-container-lowest border-l-[6px] border-transparent rounded-2xl transition-all duration-300 hover:border-primary-container hover:bg-surface-container-low hover:scale-[1.02] cursor-pointer shadow-[0px_12px_32px_rgba(156,63,0,0.04)]">
+<div class="flex items-start gap-5">
+<div class="bg-surface-container-low p-3 rounded-xl">
+<span class="material-symbols-outlined text-on-surface-variant text-3xl" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h3 class="text-xl font-bold font-headline text-on-surface">Heliopolis</h3>
+<p class="text-on-surface-variant font-medium mt-1">El Korba, Cairo</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary-container text-3xl font-bold" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Standard Card 3 -->
+<div class="group relative flex items-center justify-between p-6 bg-surface-container-lowest border-l-[6px] border-transparent rounded-2xl transition-all duration-300 hover:border-primary-container hover:bg-surface-container-low hover:scale-[1.02] cursor-pointer shadow-[0px_12px_32px_rgba(156,63,0,0.04)]">
+<div class="flex items-start gap-5">
+<div class="bg-surface-container-low p-3 rounded-xl">
+<span class="material-symbols-outlined text-on-surface-variant text-3xl" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h3 class="text-xl font-bold font-headline text-on-surface">New Cairo</h3>
+<p class="text-on-surface-variant font-medium mt-1">90th Street, 5th Settlement</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary-container text-3xl font-bold" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Standard Card 4 -->
+<div class="group relative flex items-center justify-between p-6 bg-surface-container-lowest border-l-[6px] border-transparent rounded-2xl transition-all duration-300 hover:border-primary-container hover:bg-surface-container-low hover:scale-[1.02] cursor-pointer shadow-[0px_12px_32px_rgba(156,63,0,0.04)]">
+<div class="flex items-start gap-5">
+<div class="bg-surface-container-low p-3 rounded-xl">
+<span class="material-symbols-outlined text-on-surface-variant text-3xl" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h3 class="text-xl font-bold font-headline text-on-surface">Zayed City</h3>
+<p class="text-on-surface-variant font-medium mt-1">Arkan Plaza Area</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary-container text-3xl font-bold" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Decorative Element -->
+<div class="mt-12 flex justify-center opacity-30">
+<div class="w-24 h-24 rounded-full bg-primary-container blur-3xl"></div>
+</div>
+</main>
+<!-- Map View Preview Card (Bento Style) -->
+<div class="max-w-2xl mx-auto px-6 -mt-8 mb-40">
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0px_12px_32px_rgba(156,63,0,0.06)] relative h-48 group cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="stylized map of a city with orange location pins and soft warm watercolor texture background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAbj2xQNn0c3t1NG1XtKf1dtThdxvhR9GuR1xbXNxG9FtFRYNA5DJKevTWq44Yd9N3PIgV8JvPZyQfpMz4lc3RpUCo-Jz6FJ44r-kS8HfjjxmPR5A4cgoZynPV9JyUWvyspi18OoQ6xbaXm_7evxICDsgIpddmbHyt1fZu2h9TZ-H8w3auUf2Ef1PHqfRCBmykU9eVDDdiraFt5M7HMFs2TdqcSO2OHhd_F9E_xkqcDBg1F06TCa1leOQ2nIQUkiBctYc6uGdpUknc')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed" data-icon="map" style="font-variation-settings: 'FILL' 1;">map</span>
+<span class="font-bold font-headline text-lg">Open Map View</span>
+</div>
+<p class="text-white/80 text-sm mt-1">See all 12 locations across Egypt</p>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Action -->
+<div class="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-surface via-surface to-transparent z-50">
+<div class="max-w-2xl mx-auto">
+<button class="w-full bg-primary text-on-primary font-headline text-xl font-extrabold py-5 rounded-full shadow-[0px_12px_32px_rgba(156,63,0,0.2)] hover:scale-[1.03] active:scale-95 transition-all duration-300 flex items-center justify-center gap-3">
+                Confirm Branch
+                <span class="material-symbols-outlined font-bold" data-icon="done_all">done_all</span>
+</button>
+</div>
+</div>
+<!-- Bottom Nav Suppression Check (Excluded per instructions) -->
+</body></html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Courses - Pingoo College</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Fredoka+One&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-dim": "#005386",
+                    "error-dim": "#b92902",
+                    "error-container": "#f95630",
+                    "surface-variant": "#e3dcd4",
+                    "on-tertiary": "#fff0e3",
+                    "inverse-primary": "#fe6b00",
+                    "on-secondary-fixed": "#00375b",
+                    "outline-variant": "#b2aca7",
+                    "surface-container-highest": "#e3dcd4",
+                    "on-secondary": "#ecf3ff",
+                    "tertiary-dim": "#704700",
+                    "tertiary": "#805100",
+                    "primary-fixed": "#ff7a2f",
+                    "surface-container": "#eee7e0",
+                    "primary-dim": "#893600",
+                    "surface-container-low": "#f7f0e9",
+                    "secondary-fixed-dim": "#93c8ff",
+                    "on-error-container": "#520c00",
+                    "surface-dim": "#dbd3cc",
+                    "surface-bright": "#fcf5ef",
+                    "primary": "#9c3f00",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#fcf5ef",
+                    "on-secondary-fixed-variant": "#005488",
+                    "on-secondary-container": "#004b79",
+                    "surface": "#fcf5ef",
+                    "on-error": "#ffefec",
+                    "tertiary-fixed": "#feb246",
+                    "tertiary-container": "#feb246",
+                    "secondary-fixed": "#afd5ff",
+                    "primary-fixed-dim": "#f66700",
+                    "outline": "#7a7671",
+                    "primary-container": "#ff7a2f",
+                    "on-primary-fixed-variant": "#4f1c00",
+                    "on-surface": "#312e2b",
+                    "secondary-container": "#afd5ff",
+                    "on-tertiary-fixed-variant": "#623d00",
+                    "on-tertiary-fixed": "#3a2300",
+                    "on-tertiary-container": "#563500",
+                    "on-primary-fixed": "#000000",
+                    "secondary": "#005f99",
+                    "on-background": "#312e2b",
+                    "surface-container-high": "#e8e1da",
+                    "on-surface-variant": "#5f5b56",
+                    "on-primary": "#fff0ea",
+                    "on-primary-container": "#401500",
+                    "tertiary-fixed-dim": "#eea439",
+                    "surface-tint": "#9c3f00",
+                    "inverse-on-surface": "#a19c97",
+                    "error": "#b02500",
+                    "inverse-surface": "#100e0b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Be Vietnam Pro"],
+                    "fredoka": ["Fredoka One"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/20">
+<!-- TopAppBar -->
+<header class="bg-[#fcf5ef] dark:bg-slate-900 w-full top-0 sticky z-40">
+<div class="flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden">
+<img alt="Pingoo Mascot" data-alt="Cute friendly penguin mascot with a scholarly cap, vibrant orange and white colors, 3D clay style illustration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6JFSv30-YxGxv1Gtek2l4jph66lF7SludkBYDSl4G5QugdzulFsJ1hMEd8u3HoenVIp9R9VTIKIG7_z4Y8pht3Pg0dPwvYkuPbHfKAzrHVsGgKGoUO-MBA5t3rTTeL9LWI7TrHdqLphXSNMcit7v_Kj3Pkw5a_DGHV3WsX72AJyHC-mRHRSGwnFV0P3xl4jXCfAs0oiZr96yS2kU__PmE6mCeZ-Aj_4kVE7H8QzwaxRo7ffhKkbL4cWzNgqpN-qOUO3zuNGb31Iw"/>
+</div>
+<span class="font-['Fredoka_One'] text-2xl text-orange-600">Pingoo College</span>
+</div>
+<button class="text-orange-700 dark:text-orange-500 hover:scale-105 transition-transform active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</div>
+</header>
+<main class="pb-32">
+<!-- Hero Header -->
+<section class="px-6 pt-6 pb-2">
+<h1 class="text-3xl font-extrabold text-on-surface font-headline leading-tight">Courses &amp; Programs 📚</h1>
+<p class="text-on-surface-variant mt-2 text-lg">Choose the right program for your child.</p>
+</section>
+<!-- Filter Tabs -->
+<nav class="mt-6 px-6 overflow-x-auto hide-scrollbar flex gap-3 pb-4">
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-semibold whitespace-nowrap shadow-sm">All</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-2.5 rounded-full font-medium whitespace-nowrap hover:bg-surface-variant transition-colors">Nursery</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-2.5 rounded-full font-medium whitespace-nowrap hover:bg-surface-variant transition-colors">Language</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-2.5 rounded-full font-medium whitespace-nowrap hover:bg-surface-variant transition-colors">Arts</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-2.5 rounded-full font-medium whitespace-nowrap hover:bg-surface-variant transition-colors">Science</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-2.5 rounded-full font-medium whitespace-nowrap hover:bg-surface-variant transition-colors">Sports</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-2.5 rounded-full font-medium whitespace-nowrap hover:bg-surface-variant transition-colors">Coding</button>
+</nav>
+<!-- Course Cards List -->
+<div class="px-6 space-y-8 mt-4">
+<!-- Card 1 -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_12px_32px_rgba(156,63,0,0.06)] hover:translate-y-[-4px] transition-all duration-300">
+<div class="h-48 w-full overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="diverse group of happy children learning in a bright modern classroom with educational posters and soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ7xrBhWWpseQjuTfzTjef6NIzEE6AOOebIpBFOqK_qcA2CJZKOx3cqDFUj5LUS790fYb55R1xHFxrUULjNCp8NqZ9EtVmIkyH3W40Fn7hT6F-ic7qBx7Rb4jqv78zh71zgxt7fAcVEn0hwowIA8BXdemGmBQ-ninKMU77h2AEHYh8yGvoxOOXkovbTKBdUJHrUldqR_SaiQkYDBlbtkt8JqOipT-1K-FkwVd25dXQYy_7EoC0n0oOI6ayLmIclehu_zYMDlZVNmM"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Ages 3–5</div>
+</div>
+<div class="p-6">
+<h3 class="font-fredoka text-2xl text-on-surface mb-2">Little Explorer's Club</h3>
+<div class="flex items-center gap-2 mb-4">
+<div class="flex items-center bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="location_on">location_on</span>
+<span class="text-xs font-medium ml-1">New Cairo</span>
+</div>
+<div class="flex items-center bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="location_on">location_on</span>
+<span class="text-xs font-medium ml-1">Maadi</span>
+</div>
+</div>
+<div class="flex items-center mb-6">
+<span class="material-symbols-outlined text-yellow-500 text-lg" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="ml-1 font-bold text-on-surface">4.8</span>
+<span class="ml-1 text-on-surface-variant text-sm">(12 reviews)</span>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="text-primary font-bold text-xl">450 EGP</span>
+<span class="text-on-surface-variant text-sm">/ month</span>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-bold shadow-md hover:scale-105 active:scale-95 transition-transform">Enroll Now</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_12px_32px_rgba(156,63,0,0.06)] hover:translate-y-[-4px] transition-all duration-300">
+<div class="h-48 w-full overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="a child typing on a laptop with colorful educational coding blocks on screen, close up soft lighting, tech focused academy vibe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzVibpg27bYwzFkVHD1aKtIgKkP0iymhWualcAW1IeY-rCMxaAHOH1lHZp8ok2GL6MWvF6yoAZRsttyT-9w2bHMhZwX8No0ycYvbzzCNWUTZsmGbFbQQfIngzSryenmtFqs7wO5iFG_9KpPFHlcj3HazFYdnLwGCYJzoOIFJ4UsXLOtdPCQB9SIuSkTPEQU8d6JjnlwrG_7l6FeGjs1wqVvdkhPvUtwpZalc1mr5ugv2oNM3fnudUsTD_TbeBqNM1vZIlbGEX8_-k"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Ages 8–12</div>
+</div>
+<div class="p-6">
+<h3 class="font-fredoka text-2xl text-on-surface mb-2">Future Coders Bootcamp</h3>
+<div class="flex items-center gap-2 mb-4">
+<div class="flex items-center bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="location_on">location_on</span>
+<span class="text-xs font-medium ml-1">Zayed</span>
+</div>
+</div>
+<div class="flex items-center mb-6">
+<span class="material-symbols-outlined text-yellow-500 text-lg" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="ml-1 font-bold text-on-surface">4.9</span>
+<span class="ml-1 text-on-surface-variant text-sm">(28 reviews)</span>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="text-primary font-bold text-xl">600 EGP</span>
+<span class="text-on-surface-variant text-sm">/ month</span>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-bold shadow-md hover:scale-105 active:scale-95 transition-transform">Enroll Now</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_12px_32px_rgba(156,63,0,0.06)] hover:translate-y-[-4px] transition-all duration-300">
+<div class="h-48 w-full overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="close up of children painting with vibrant watercolors on white paper, artistic messy hands, creative joy, soft sunlit art studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_A-iE29F3UsyFpS53NuYwghjlWrp5y8jjNlIp7LQHjUieEyJxeB5ZxPdRNplqumV5d_sRz-HBT5OMauVd3KmYutJgydbG_awTBMIuqgoPU-1MsW8mIxZl_PI0gzNDMircwXP9ae6L4tEH3whqJMe2NCdUEkM4hp_DNMY0a0a00M0MIpSFsLrgvsZ_NvHSBh0jTsiZ_4lE7Oi5u--G85vDKoHr0TidFoeCqSCv-LD5GFsLWc82WVySqFBgAtLjJTW1uz3XX3SnCxc"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Ages 5–10</div>
+</div>
+<div class="p-6">
+<h3 class="font-fredoka text-2xl text-on-surface mb-2">Creative Canvas Arts</h3>
+<div class="flex items-center gap-2 mb-4">
+<div class="flex items-center bg-surface-container px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="location_on">location_on</span>
+<span class="text-xs font-medium ml-1">Heliopolis</span>
+</div>
+</div>
+<div class="flex items-center mb-6">
+<span class="material-symbols-outlined text-yellow-500 text-lg" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="ml-1 font-bold text-on-surface">4.7</span>
+<span class="ml-1 text-on-surface-variant text-sm">(45 reviews)</span>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="text-primary font-bold text-xl">380 EGP</span>
+<span class="text-on-surface-variant text-sm">/ month</span>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-bold shadow-md hover:scale-105 active:scale-95 transition-transform">Enroll Now</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md z-50 rounded-t-[32px] shadow-[0px_-12px_32px_rgba(156,63,0,0.06)]">
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-1 hover:bg-orange-50 dark:hover:bg-orange-900/20 rounded-full transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="home">home</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-1 hover:bg-orange-50 dark:hover:bg-orange-900/20 rounded-full transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="search">search</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold">Discover</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 rounded-full px-4 py-1 scale-110 transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="school" data-weight="fill" style="font-variation-settings: 'FILL' 1;">school</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold">Enroll</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-1 hover:bg-orange-50 dark:hover:bg-orange-900/20 rounded-full transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="notifications">notifications</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold">Alerts</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-1 hover:bg-orange-50 dark:hover:bg-orange-900/20 rounded-full transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="location_on">location_on</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-semibold">Branches</span>
+</a>
+</nav>
+</body></html>

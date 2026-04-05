@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-dim": "#893600",
+                        "surface-container": "#eee7e0",
+                        "on-tertiary-container": "#563500",
+                        "on-error": "#ffefec",
+                        "on-surface": "#312e2b",
+                        "tertiary-fixed": "#feb246",
+                        "on-error-container": "#520c00",
+                        "on-primary-container": "#401500",
+                        "surface": "#fcf5ef",
+                        "tertiary-dim": "#704700",
+                        "error-container": "#f95630",
+                        "primary": "#9c3f00",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e3dcd4",
+                        "on-primary": "#fff0ea",
+                        "surface-variant": "#e3dcd4",
+                        "background": "#fcf5ef",
+                        "secondary-fixed-dim": "#93c8ff",
+                        "inverse-primary": "#fe6b00",
+                        "inverse-on-surface": "#a19c97",
+                        "primary-container": "#ff7a2f",
+                        "secondary-fixed": "#afd5ff",
+                        "secondary-dim": "#005386",
+                        "tertiary-container": "#feb246",
+                        "primary-fixed-dim": "#f66700",
+                        "on-secondary": "#ecf3ff",
+                        "surface-bright": "#fcf5ef",
+                        "on-secondary-container": "#004b79",
+                        "on-primary-fixed-variant": "#4f1c00",
+                        "outline-variant": "#b2aca7",
+                        "inverse-surface": "#100e0b",
+                        "surface-tint": "#9c3f00",
+                        "error": "#b02500",
+                        "on-surface-variant": "#5f5b56",
+                        "surface-container-high": "#e8e1da",
+                        "on-primary-fixed": "#000000",
+                        "error-dim": "#b92902",
+                        "surface-dim": "#dbd3cc",
+                        "on-tertiary": "#fff0e3",
+                        "secondary": "#005f99",
+                        "primary-fixed": "#ff7a2f",
+                        "surface-container-low": "#f7f0e9",
+                        "on-secondary-fixed-variant": "#005488",
+                        "on-secondary-fixed": "#00375b",
+                        "secondary-container": "#afd5ff",
+                        "outline": "#7a7671",
+                        "tertiary-fixed-dim": "#eea439",
+                        "on-tertiary-fixed-variant": "#623d00",
+                        "tertiary": "#805100",
+                        "on-tertiary-fixed": "#3a2300",
+                        "on-background": "#312e2b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #ffffff; /* Explicit white as per background request */
+        }
+        .fredoka {
+            font-family: 'Fredoka One', cursive;
+        }
+        .asymmetric-blob {
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col items-center justify-between overflow-hidden">
+<!-- Top Navigation Anchor (Manual for Onboarding Flow) -->
+<header class="w-full flex justify-between items-center px-6 py-4">
+<div class="font-['Fredoka_One'] text-xl text-[#9c3f00]">Pingoo College</div>
+<button class="text-on-surface-variant font-semibold text-sm hover:scale-105 transition-transform duration-200">Skip</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 flex flex-col items-center justify-center w-full max-w-md px-8 text-center relative">
+<!-- Background Decorative Elements (Organic Asymmetry) -->
+<div class="absolute top-10 -right-10 w-48 h-48 bg-surface-container-low asymmetric-blob opacity-50 -z-10"></div>
+<div class="absolute bottom-40 -left-16 w-64 h-64 bg-secondary-container/20 asymmetric-blob opacity-40 -z-10"></div>
+<!-- Center Visual: Campus Building & Map -->
+<div class="relative w-full aspect-square max-h-[320px] mb-12 flex items-center justify-center">
+<!-- Representing the Map & Branch Pins -->
+<div class="absolute inset-0 bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+<img alt="Campus building with pins" class="w-full h-full object-cover opacity-30 grayscale" data-alt="A stylized aerial map view of a suburban college campus with soft morning lighting and clean architectural lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgQDELuapI3K4RPGBMjM4haPjJVl92cpMroPpCHURUyrHfIxXASB0hN8gPgWG5UJ7h__iBmZjXfmJbsnNC3v6odRQXXelUuOZoio2mAxv9tf1pbAFTca9CcEI-W_gh3PaS8jMeTe4OIGeF1hf1DGu7oWO7QCLmoZR2mCN4ZWE_dsAUkKHQAtyV8aarC4Sy0fHdLv5Tmd4mNVflTKwlVmXogGIPM7qJBtaJQZ-VKouBNlg396ApiK-YlyyMxAVaC5RzoWjZSaG6ZUA"/>
+</div>
+<!-- Floating Campus Card (Glassmorphism) -->
+<div class="relative z-10 bg-white/80 backdrop-blur-md p-6 rounded-lg shadow-[0px_12px_32px_rgba(156,63,0,0.06)] border border-white/50 flex flex-col items-center">
+<div class="w-40 h-40 rounded-lg overflow-hidden bg-white mb-4">
+<img alt="Pingoo College Campus" class="w-full h-full object-cover" data-alt="A charming brick school building with a playful orange penguin flag flying high, surrounded by lush green trees and clear blue sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBwi2gFKXxpA4UE8kSDWX8T7QcV9uBDcXILZus_CEAxBs6vWnxIoJemhuwpLI67oT900FNf2fHqREtsF5-xdvSR4V-QSsqnWLeK2tUSfuZQ7Pno5Y0G54Zs02ZOyqzKDbmoZtPESR0koq91FsGEUdQ5HCjLT6dunQZVm8s0YzLEXoVWdTjkyJRhDiR_VC3sev8WmAfn0qv5sOrqQYnv-zHek9eqVj1k6YGwvuEPkC8FQpofM42n0KNaApqbqrXMZiV60IvFU75oWc"/>
+</div>
+<!-- Interactive Branch Pins (Simulated) -->
+<div class="absolute -top-4 -right-4 bg-primary text-on-primary p-3 rounded-full shadow-lg scale-110">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="absolute top-1/2 -left-8 bg-secondary text-on-secondary p-2 rounded-full shadow-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="absolute bottom-2 right-12 bg-tertiary-container text-on-tertiary-container p-2 rounded-full shadow-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+</div>
+<!-- Typography Section -->
+<section class="space-y-4">
+<h1 class="fredoka text-3xl md:text-4xl text-on-surface leading-tight">
+                Many Branches, One Family 🏫
+            </h1>
+<p class="text-on-surface-variant text-lg leading-relaxed px-2 font-medium">
+                Choose the nearest Pingoo College branch to you and enroll your child today!
+            </p>
+</section>
+<!-- Page Indicator -->
+<div class="flex gap-2.5 mt-8">
+<div class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></div>
+<div class="w-6 h-2.5 rounded-full bg-primary-container"></div>
+</div>
+</main>
+<!-- Bottom Actions Section (High-End Vertical Stack) -->
+<footer class="w-full max-w-md px-8 pb-12 flex flex-col gap-4">
+<!-- Primary Action -->
+<button class="w-full bg-primary-container text-on-primary-fixed font-bold py-5 rounded-[16px] shadow-[0px_8px_20px_rgba(255,122,47,0.25)] hover:scale-[1.02] active:scale-95 transition-all duration-300 text-lg flex items-center justify-center gap-2">
+            Get Started
+            <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+<!-- Secondary Action -->
+<button class="w-full bg-transparent border-2 border-surface-container-highest text-on-surface font-semibold py-4 rounded-[16px] hover:bg-surface-container-low transition-colors duration-200">
+            I Already Have an Account
+        </button>
+</footer>
+<!-- Decorative Corner Element -->
+<div class="fixed -bottom-10 -right-10 w-32 h-32 text-primary/5 opacity-20 pointer-events-none rotate-12">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">child_care</span>
+</div>
+</body></html>
