@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pingoo College - Arrival Notification</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#afd5ff",
+                    "surface-variant": "#e3dcd4",
+                    "tertiary": "#805100",
+                    "surface-dim": "#dbd3cc",
+                    "tertiary-dim": "#704700",
+                    "on-secondary-container": "#004b79",
+                    "inverse-on-surface": "#a19c97",
+                    "outline": "#7a7671",
+                    "on-tertiary-container": "#563500",
+                    "secondary-container": "#afd5ff",
+                    "inverse-primary": "#fe6b00",
+                    "error-container": "#f95630",
+                    "on-secondary-fixed-variant": "#005488",
+                    "surface-container-low": "#f7f0e9",
+                    "primary-fixed-dim": "#f66700",
+                    "primary-container": "#ff7a2f",
+                    "surface-container-highest": "#e3dcd4",
+                    "primary": "#9c3f00",
+                    "surface-bright": "#fcf5ef",
+                    "on-tertiary": "#fff0e3",
+                    "error-dim": "#b92902",
+                    "on-primary": "#fff0ea",
+                    "on-tertiary-fixed-variant": "#623d00",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#fcf5ef",
+                    "background": "#fcf5ef",
+                    "on-primary-container": "#401500",
+                    "on-primary-fixed-variant": "#4f1c00",
+                    "on-error": "#ffefec",
+                    "outline-variant": "#b2aca7",
+                    "on-secondary": "#ecf3ff",
+                    "on-error-container": "#520c00",
+                    "tertiary-fixed": "#feb246",
+                    "on-secondary-fixed": "#00375b",
+                    "on-primary-fixed": "#000000",
+                    "secondary": "#005f99",
+                    "tertiary-fixed-dim": "#eea439",
+                    "on-surface": "#312e2b",
+                    "on-tertiary-fixed": "#3a2300",
+                    "surface-tint": "#9c3f00",
+                    "surface-container-high": "#e8e1da",
+                    "secondary-dim": "#005386",
+                    "on-background": "#312e2b",
+                    "inverse-surface": "#100e0b",
+                    "primary-dim": "#893600",
+                    "surface-container": "#eee7e0",
+                    "on-surface-variant": "#5f5b56",
+                    "error": "#b02500",
+                    "tertiary-container": "#feb246",
+                    "secondary-fixed-dim": "#93c8ff",
+                    "primary-fixed": "#ff7a2f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Be Vietnam Pro"],
+                    "fredoka": ["Fredoka One"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .bg-soft-orange { background-color: #FFF8F2; }
+      .floating-penguin { filter: drop-shadow(0px 10px 15px rgba(156,63,0,0.15)); }
+      .confetti-dot { position: absolute; border-radius: 50%; opacity: 0.6; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-soft-orange font-body text-on-surface overflow-hidden">
+<!-- Notification Shell -->
+<main class="relative min-h-screen w-full flex flex-col items-center justify-center px-6 py-12 overflow-hidden">
+<!-- Decorative Background Elements (Confetti) -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden">
+<div class="confetti-dot bg-primary-container w-3 h-3 left-[10%] top-[20%]"></div>
+<div class="confetti-dot bg-secondary w-4 h-4 right-[15%] top-[15%]"></div>
+<div class="confetti-dot bg-tertiary-container w-2 h-2 left-[20%] bottom-[30%]"></div>
+<div class="confetti-dot bg-error w-3 h-3 right-[25%] bottom-[20%]"></div>
+<div class="confetti-dot bg-primary w-2 h-2 left-[40%] top-[10%]"></div>
+<div class="confetti-dot bg-secondary-fixed w-4 h-4 right-[40%] bottom-[10%]"></div>
+<!-- Organic Wave Section Transition (Design System Rule) -->
+<svg class="absolute bottom-0 w-full text-surface-container-low fill-current" viewbox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+<path d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+</svg>
+</div>
+<!-- Main Card Container -->
+<div class="z-10 w-full max-w-md flex flex-col items-center text-center">
+<!-- Mascot Illustration (Pingoo the Penguin) -->
+<div class="mb-2 relative floating-penguin">
+<img alt="Pingoo the penguin mascot joyfully waving and giving a high-five" class="w-32 h-32 object-contain mx-auto" data-alt="a friendly cartoon penguin with a small orange scarf waving joyfully and giving a high-five in a soft 3D illustrative style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr0hKJ7d0_oo4fQGlnUFOf3KkuVpXFRlrlf1R6_KqnM7Vpe_jXHOYoPB2q3sOnC8NO7aAGDRxLT_duFXFtCDYTJK34fUF3QeaxyiWeMsHBj5fZ3LLQtsMS0zhG_0wuD9Y-NmPsrhonx7S9E6ykT20pE1yOvIUsrcRXZvzZN4lwRLh93wYfwkvSCVcq7F1z6Ld-jxEBioykqcF_TxfFXIJ8HBvXy16IFd5fEVOL_mTPxGB0fl1qmp1FMC8h6u2D3jtNvR3_Kr4yd_I"/>
+</div>
+<!-- Profile Section -->
+<div class="relative mb-8">
+<!-- Outer Glow Ring -->
+<div class="absolute inset-0 -m-3 bg-white/50 rounded-full blur-xl"></div>
+<!-- Image Container -->
+<div class="relative w-44 h-44 rounded-full border-8 border-white shadow-[0px_12px_32px_rgba(156,63,0,0.12)] overflow-hidden">
+<img alt="Child profile photo of Ahmed" class="w-full h-full object-cover" data-alt="a smiling young boy with curly dark hair wearing a orange school polo shirt against a soft cream background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcrMRxRA1JJBRySqc0L4hUprgesW5631C_t3IeO9HSK7hgxLo4v7DF0CJu0WFTFbWQ7ngqlYgYF5GojgGKO7lwHvMOqfZ5FCMuJ0JxaOFde1YfFGsZmmSQ5gydiDUEfc6izIUfsiJnNR6e0du0zbLlKXhMX6f_0Qj0fST1dXoMuxCyIPZaXCLHmX8icSjlgHtV3vy7LymBm7_kpPIBWOHF5j2DZx_QAYk00ijKCw0enhkYEiaRsT-S2e8yl52YUaYGhCxa4aAY_yI"/>
+</div>
+<!-- Green Checkmark Badge -->
+<div class="absolute bottom-1 right-1 bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center border-4 border-white shadow-lg">
+<span class="material-symbols-outlined text-2xl font-bold" data-icon="check" style="font-variation-settings: 'FILL' 0, 'wght' 700;">check</span>
+</div>
+</div>
+<!-- Typography Content -->
+<div class="space-y-4 px-4 mb-10">
+<h1 class="font-fredoka text-4xl text-primary leading-tight">
+                    Ahmed has Arrived! ✅
+                </h1>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed">
+                    He was safely checked in at <span class="font-bold text-on-surface">8:02 AM</span> at the <span class="font-bold text-on-surface">Nasr City Branch</span>.
+                </p>
+</div>
+<!-- Action Area -->
+<div class="w-full space-y-6">
+<!-- Primary Button -->
+<button class="w-full bg-primary-container text-on-primary-container font-headline font-extrabold text-lg py-5 px-8 rounded-xl shadow-[0px_8px_24px_rgba(156,63,0,0.15)] hover:scale-[1.04] active:scale-[0.96] transition-all duration-200 uppercase tracking-widest">
+                    View Daily Schedule
+                </button>
+<!-- Dismiss Link -->
+<button class="text-stone-400 font-headline font-semibold text-sm hover:text-stone-600 transition-colors uppercase tracking-widest">
+                    Dismiss
+                </button>
+</div>
+</div>
+<!-- Floating Glass Content Block (Design System 2. Glass & Gradient) -->
+<div class="z-10 mt-12 w-full max-w-sm bg-white/60 backdrop-blur-xl rounded-lg p-6 border border-white/20 shadow-sm flex items-center gap-4">
+<div class="bg-tertiary-container/20 p-3 rounded-full">
+<span class="material-symbols-outlined text-tertiary text-2xl" data-icon="info">info</span>
+</div>
+<div class="text-left">
+<p class="text-xs font-headline font-bold text-tertiary uppercase tracking-tighter">Teacher's Note</p>
+<p class="text-sm font-body text-on-surface-variant">Ahmed has art class first today!</p>
+</div>
+</div>
+</main>
+<!-- Navigation suppressed per 'Semantic Shell Mandate' for Focused/Transactional screens -->
+<!-- This is a full-screen notification focus, so global nav is hidden to prioritize the arrival message. -->
+</body></html>

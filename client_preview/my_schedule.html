@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Fredoka+One&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-dim": "#005386",
+                        "error-dim": "#b92902",
+                        "error-container": "#f95630",
+                        "surface-variant": "#e3dcd4",
+                        "on-tertiary": "#fff0e3",
+                        "on-secondary-fixed": "#00375b",
+                        "inverse-primary": "#fe6b00",
+                        "surface-container-highest": "#e3dcd4",
+                        "on-secondary": "#ecf3ff",
+                        "outline-variant": "#b2aca7",
+                        "tertiary-dim": "#704700",
+                        "tertiary": "#805100",
+                        "primary-fixed": "#ff7a2f",
+                        "primary-dim": "#893600",
+                        "surface-container": "#eee7e0",
+                        "surface-dim": "#dbd3cc",
+                        "surface-container-low": "#f7f0e9",
+                        "secondary-fixed-dim": "#93c8ff",
+                        "on-error-container": "#520c00",
+                        "background": "#fcf5ef",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#9c3f00",
+                        "surface-bright": "#fcf5ef",
+                        "surface": "#fcf5ef",
+                        "on-error": "#ffefec",
+                        "on-secondary-fixed-variant": "#005488",
+                        "on-secondary-container": "#004b79",
+                        "outline": "#7a7671",
+                        "primary-container": "#ff7a2f",
+                        "tertiary-fixed": "#feb246",
+                        "tertiary-container": "#feb246",
+                        "secondary-fixed": "#afd5ff",
+                        "primary-fixed-dim": "#f66700",
+                        "on-tertiary-container": "#563500",
+                        "on-primary-fixed": "#000000",
+                        "secondary-container": "#afd5ff",
+                        "on-tertiary-fixed-variant": "#623d00",
+                        "on-tertiary-fixed": "#3a2300",
+                        "on-primary-fixed-variant": "#4f1c00",
+                        "on-surface": "#312e2b",
+                        "on-background": "#312e2b",
+                        "secondary": "#005f99",
+                        "on-surface-variant": "#5f5b56",
+                        "on-primary": "#fff0ea",
+                        "surface-container-high": "#e8e1da",
+                        "surface-tint": "#9c3f00",
+                        "inverse-on-surface": "#a19c97",
+                        "tertiary-fixed-dim": "#eea439",
+                        "on-primary-container": "#401500",
+                        "inverse-surface": "#100e0b",
+                        "error": "#b02500"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .fredoka { font-family: 'Fredoka One', cursive; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-24">
+<!-- Top AppBar Component -->
+<header class="bg-[#fcf5ef] dark:bg-stone-900 flex justify-between items-center w-full px-6 py-4 sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container flex items-center justify-center">
+<img alt="Mascot" class="w-full h-full object-cover" data-alt="cute penguin mascot character with a graduation cap and a friendly smile on a warm background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwRJY-y9cIIuXABkORTZ2cmvGHZAoQSb6LshSSbUUwCaGUXPOwraJmdW8ZDl5t5kTQD1X--ZMgKKakHKGfE8fwZEcEsnbko6PbirAf79bDqt8paTD95O_u4dKSnk9edPlsr_shkdtsZCKuNpRXO-OQVB_udSi5z_XOd5coLhIss3uUHJSUdESXT2KShVb90ATieQqKh8TPkFv_W3wljYM8w2sQkUH7GLncuHprEXj2na4kcpK5Shj5DuXatKxgkPIEy2dbdwEAeSA"/>
+</div>
+<span class="font-['Fredoka_One'] text-2xl text-orange-700 dark:text-orange-500">Pingoo College</span>
+</div>
+<button class="w-10 h-10 flex items-center justify-center text-orange-700 dark:text-orange-400 hover:scale-105 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</header>
+<main class="px-6 space-y-6">
+<!-- Header Section -->
+<section class="mt-4">
+<div class="flex items-center justify-between">
+<h1 class="text-2xl font-bold text-on-background">My Schedule 📅</h1>
+<div class="flex items-center bg-surface-container-low px-4 py-2 rounded-full gap-2">
+<button class="material-symbols-outlined text-primary text-sm">chevron_left</button>
+<span class="text-sm font-semibold text-on-surface-variant">April 2026</span>
+<button class="material-symbols-outlined text-primary text-sm">chevron_right</button>
+</div>
+</div>
+</section>
+<!-- Horizontal Date Strip -->
+<section class="no-scrollbar overflow-x-auto flex gap-3 pb-2 -mx-6 px-6">
+<div class="flex flex-col items-center min-w-[56px] py-3 rounded-2xl bg-surface-container-lowest">
+<span class="text-[10px] uppercase font-bold text-outline">Mon</span>
+<span class="text-lg font-bold">1</span>
+<div class="w-1 h-1 bg-primary rounded-full mt-1"></div>
+</div>
+<div class="flex flex-col items-center min-w-[56px] py-3 rounded-2xl bg-surface-container-lowest">
+<span class="text-[10px] uppercase font-bold text-outline">Tue</span>
+<span class="text-lg font-bold">2</span>
+</div>
+<div class="flex flex-col items-center min-w-[56px] py-3 rounded-2xl bg-surface-container-lowest">
+<span class="text-[10px] uppercase font-bold text-outline">Wed</span>
+<span class="text-lg font-bold">3</span>
+<div class="w-1 h-1 bg-primary rounded-full mt-1"></div>
+</div>
+<div class="flex flex-col items-center min-w-[56px] py-3 rounded-2xl bg-surface-container-lowest">
+<span class="text-[10px] uppercase font-bold text-outline">Thu</span>
+<span class="text-lg font-bold">4</span>
+</div>
+<div class="flex flex-col items-center min-w-[56px] py-3 rounded-2xl bg-surface-container-lowest">
+<span class="text-[10px] uppercase font-bold text-outline">Fri</span>
+<span class="text-lg font-bold">5</span>
+</div>
+<!-- Today (Active State) -->
+<div class="flex flex-col items-center min-w-[56px] py-3 rounded-2xl bg-primary text-on-primary shadow-lg shadow-primary/20">
+<span class="text-[10px] uppercase font-bold opacity-80">Sat</span>
+<span class="text-lg font-bold">6</span>
+<div class="w-1 h-1 bg-on-primary rounded-full mt-1"></div>
+</div>
+<div class="flex flex-col items-center min-w-[56px] py-3 rounded-2xl bg-surface-container-lowest">
+<span class="text-[10px] uppercase font-bold text-outline">Sun</span>
+<span class="text-lg font-bold">7</span>
+</div>
+</section>
+<!-- Session Cards -->
+<section class="space-y-4">
+<!-- Upcoming Class Card -->
+<div class="bg-surface-container-lowest rounded-[20px] border-l-[6px] border-primary p-5 shadow-sm">
+<div class="flex justify-between items-start mb-3">
+<div class="flex items-center gap-2 text-on-surface-variant font-medium text-sm">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+                        10:00 AM – 12:00 PM
+                    </div>
+<span class="px-3 py-1 bg-primary-container/20 text-primary text-[10px] font-bold rounded-full">⏰ Upcoming</span>
+</div>
+<h3 class="text-lg font-bold mb-2">🔬 Little Explorers Science Club</h3>
+<div class="space-y-1 mb-4">
+<div class="flex items-center gap-2 text-on-surface-variant text-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                        Nasr City Branch — Room 3B
+                    </div>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm">
+<span class="material-symbols-outlined text-[16px]">person</span>
+                        Ms. Rania
+                    </div>
+</div>
+<button class="bg-primary text-on-primary px-5 py-2 rounded-full text-sm font-bold flex items-center gap-2 hover:scale-105 transition-transform active:scale-95">
+                    Set Reminder <span class="material-symbols-outlined text-sm">notifications</span>
+</button>
+</div>
+<!-- Missed Class Card -->
+<div class="bg-surface-container-lowest rounded-[20px] border-l-[6px] border-error p-5 shadow-sm opacity-90">
+<div class="flex justify-between items-start mb-3">
+<div class="flex items-center gap-2 text-on-surface-variant font-medium text-sm">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+                        10:00 AM — Saturday, Mar 29
+                    </div>
+<span class="px-3 py-1 bg-error/10 text-error text-[10px] font-bold rounded-full">❌ Missed</span>
+</div>
+<h3 class="text-lg font-bold mb-4">🔬 Little Explorers Science Club</h3>
+<button class="bg-secondary text-on-secondary px-5 py-2 rounded-full text-sm font-bold flex items-center gap-2 hover:scale-105 transition-transform active:scale-95">
+                    Watch Recorded Lesson <span class="material-symbols-outlined text-sm">videocam</span>
+</button>
+</div>
+<!-- Completed Class Card -->
+<div class="bg-surface-container-lowest rounded-[20px] border-l-[6px] border-emerald-500 p-5 shadow-sm">
+<div class="flex justify-between items-start mb-3">
+<div class="flex items-center gap-2 text-on-surface-variant font-medium text-sm">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+                        10:00 AM — Saturday, Mar 22
+                    </div>
+<span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-[10px] font-bold rounded-full">✅ Attended</span>
+</div>
+<h3 class="text-lg font-bold mb-4">🔬 Little Explorers Science Club</h3>
+<button class="bg-transparent border-2 border-outline-variant text-on-surface-variant px-5 py-2 rounded-full text-sm font-bold flex items-center gap-2 hover:bg-surface-container transition-colors">
+                    View Materials <span class="material-symbols-outlined text-sm">folder</span>
+</button>
+</div>
+</section>
+<!-- Bottom section: Upcoming This Week -->
+<section class="space-y-4">
+<h2 class="text-xl font-bold">Upcoming This Week</h2>
+<div class="flex gap-3 overflow-x-auto no-scrollbar pb-4">
+<div class="flex items-center gap-3 bg-tertiary-container/20 px-4 py-3 rounded-2xl border border-tertiary-container/30 min-w-max">
+<div class="w-8 h-8 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-lg">event</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-tertiary-container">Science Fair 2026</p>
+<p class="text-[10px] text-on-surface-variant">Wednesday, April 10</p>
+</div>
+</div>
+<div class="flex items-center gap-3 bg-secondary-container/20 px-4 py-3 rounded-2xl border border-secondary-container/30 min-w-max">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-lg">psychology</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-secondary-container">Brain Games Trivia</p>
+<p class="text-[10px] text-on-surface-variant">Friday, April 12</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-white/80 dark:bg-stone-950/80 backdrop-blur-md rounded-t-[32px] shadow-[0px_-12px_32px_rgba(156,63,0,0.06)]">
+<!-- Home (Active as per instruction requirement despite being on Schedule screen) -->
+<a class="flex flex-col items-center justify-center bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 rounded-[24px] px-4 py-2 scale-110 transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px]">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-2 hover:bg-stone-50 dark:hover:bg-stone-800 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="child_care">child_care</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px]">My Child</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-2 hover:bg-stone-50 dark:hover:bg-stone-800 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px]">Courses</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-2 hover:bg-stone-50 dark:hover:bg-stone-800 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px]">Branches</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-2 hover:bg-stone-50 dark:hover:bg-stone-800 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px]">Profile</span>
+</a>
+</nav>
+<!-- Visual Accents (Editorial "Confetti") -->
+<div class="fixed top-24 -right-12 w-32 h-32 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="fixed bottom-48 -left-8 w-24 h-24 bg-secondary-container/15 rounded-full blur-2xl pointer-events-none"></div>
+</body></html>
